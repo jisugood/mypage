@@ -1,184 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
     * {
-        font-family: 'Gowun Dodum', sans-serif;
+      font-family: 'Dongle', sans-serif;
     }
 
     .mytitle {
-        background-color: aqua;
-        color: white;
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg);
-        background-position: center;
-        background-size: cover
+      color: white;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+      background-position: center;
+      background-size: cover;
     }
-
-
 
     .mytitle>button {
-        width: 250px;
-        height: 50px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 50px;
-        margin-top: 20px;
+      width: 250px;
+      height: 50px;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      border-radius: 50px;
+      margin-top: 20px;
+
     }
 
-    .box>button:hover {
-        border: 2px solid white;
+    .mytitle>button:hover {
+      border: 2px solid white;
     }
 
-    .mycard {
-        width: :1200px;
-        margin: 20px auto 20px auto;
+    .mycards {
+      width: 1200px;
+      margin: 20px auto 20px auto;
+    }
+
+    .card {
+      font-size: larger;
+    }
+
+    .card-title {
+      color: crimson;
     }
 
     .mypost {
-        background-color: aqua;
-        width: 500;
-        margin: 20px auto 20px auto;
-        padding: 20px 20px 20px 20px;
-
-
-
-    }
-
-    .mybtn {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-    }
+      width: 500px;
+      margin: 20px auto 20px auto;
+      padding: 20px 20px 20px 20px; 
+      box-shadow: 0px 0px 10px 0px gray;
+      
+     }
+.mybtn {display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;}
+.mybtn>button {margin-right: 10px;}
+    
 </style>
 
-<body>
-    
-    </div>
-    </div>
-    </div>
-    <div class="mybtn">
-        <button type="button" class="btn btn-dark">기록하기</button>
-        <button type="button" class="btn btn-outline-dark">닫기</button>
-        <dIV class="mycard">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 됩니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 됩니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 됩니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 됩니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 됩니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </dIV>
-</body>
+</head>
 
-</html>
+<body>
+  <div class="mytitle">
+    <h1>내 생애 최고의 영화들</h1>
+    <button>영화 기록하기</button> 
+  </div>
+
+  <div class="mypost">
+    <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">영화 URL</label>
+  </div> 
+
+   <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">코멘트</label> 
+    </div>
+      
+    <DIV CLASS="mybtn">
+        <div class="form-floating">
+          <button type="button" class="btn btn-dark">기록하기</button>
+          <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div> 
+      </div>
+      </div>
+
+  <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://img1.daumcdn.net/thumb/C300x430/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F3a684ccaeb7aeac8e3f060ffe7249f7fe039443a">
+              <div class="card-body">
+                <h5 class="card-title">스즈메의 문단속</h5>
+                <p class="card-text">내용도 좀 난해하고.. 무엇보다 다이진이 너무 불쌍하다.. 끝까지 고맙다는 소리도 못듣고 봉인되버린 다이진.. 그래서 더 맘에 안든다. 하지만 최고의
+                  영화다. 지완이랑 봤으니깐</p>
+                <p>⭐⭐⭐</p>
+
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://mblogthumb-phinf.pstatic.net/MjAyMDAzMjRfODIg/MDAxNTg0OTc2MDQ5MDc3.1LKTdOTgbfakgxBYZE8kojZXkr2XuIzM6eUyBuIwHbgg.LenEimMku_KXJG9fyojuu-WkAvTPvCH53Zj9VO_MOikg.JPEG.morningroll7/1584976048678.jpg?type=w800">
+              <div class="card-body">
+                <h5 class="card-title">너의 이름은</h5>
+                <p class="card-text">시간 가는지 모르고 봤던 영화! 작화가 너무 이쁘다 한국어 더빙판은 보지마라 답이 없다.. 최근에 다시 리메이크 된다고 하는데 기대가 된다 </p>
+                <p>⭐⭐⭐⭐⭐ </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="http://t1.daumcdn.net/cfile/226307495358B8F61A" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">끝까지 간다</h5>
+                <p class="card-text">몰입도가 깨저는 영화.. 내가 좋아하는 배우가 전부 나온다 조진웅, 이선균.. 이선균 쫄리는 연기 너무 맛갈지게 보여줌.. 처음에 불다로 가족끼리
+                  봤는데
+                  사랑을 나누는 영상이 나와서 놀랐다^^; 여자분이 정말 끝까지 가버렸다;
+                </p>
+                <p>⭐⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://i.ibb.co/cbr7t9G/Kakao-Talk-20230408-002813087-01.jpg"
+                alt="Kakao-Talk-20230408-002813087-01" height="320"></a>
+              <div class="card-body">
+                <h5 class="card-title">김찌와 물왕저수지</h5>
+                <p class="card-text">어렸을때 부터 놀았던 물왕리에 처음으로 남자친구를 데려와서 매우 좋았다.
+                  김찌가 생각보다 내 운전을 무서워하지 않아서 다행이었다. 김찌가 세상에서 제일 좋다
+                <p>
+                <p>⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
